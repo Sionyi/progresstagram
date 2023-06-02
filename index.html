@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home {
+  color: #ffffff;
+}
+
+.about {
+  background-color: #0099ff;
+  color: #ffd500;
+}
+
+.portfolio {
+  background-color: #e0dfd5;
+  color: #000000;
+}
+.pompom {
+    height: 300px;
+    padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+}
+.trap {
+    height: 300px;
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.swim {
+    height: 300px;
+    display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.social {
+  background-color: #ffd500;
+  color: #0099ff;
+}
+.instaicon {
+    height:80px;
+}
+.pinteresticon {
+    height:80px;
+}
+.instaicon {
+    font-weight: 30px;
+}
+
+.footer {
+  background-color: #0099ff;
+  color: #ffd500;
+}
+
+#video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.wave-animation {
+  font-size: 40px;
+  animation: wave 2s ease-in-out infinite;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+.header {
+  padding: 20px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.portfolio-grid {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.portfolio-grid li {
+  margin: 10px;
+}
+
+.portfolio-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div id="home" class="section home">
+    <video autoplay muted loop id="video-bg">
+      <source src="duck_download.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <h1 class="wave-animation">YI SION</h1>
+      <h2 class="subtitle">progress.taram</h2>
+      <a href="#about" class="scroll-link">About</a>
+    </div>
+  </div>
+
+  <div id="about" class="section about">
+    <header>
+      <h1>ABOUT</h1>
+    </header>
+    <div class="content">
+      <p>"HI! I'm Sion, a passionate 3D artist exploring the realms of digital creativity!</p>
+    </div>
+  </div>
+
+  <div id="portfolio" class="section portfolio">
+    <header>
+      <h1>PORTFOLIO</h1>
+    </header>
+    <div class="content">
+      <ul class="portfolio-grid">
+        <!-- Replace the image URLs and add more as needed -->
+        <li class=pompom><img  src="pompom_smile.jpg" alt="pom pom smile"></li>
+        <li class=trap><img  src="trapped.png" alt="trapped"></li>
+        <li class=swim><img  src="greenguyswim.png" alt="green guy swim"></li>
+        <!-- Add more portfolio items as needed -->
+      </ul>
+    </div>
+  </div>
+
+  <div id="social" class="section social">
+    <header>
+      <h1>SOCIAL MEDIA</h1>
+        <img class="instaicon" src="instagram_icon.png" alt="INSTA">
+        <img class="pinteresticon" src="pinterest.png" alt="PINTEREST">
+    </header>
+    <div class="content">
+      <ul class="social-links">
+        <li class="insta"><a href="https://www.instagram.com/progress.tagram/">Instagram</a></li>
+        <li class="pinterest"><a href="https://www.pinterest.com/Progresstagram/">Pinterest</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer id="footer" class="section footer">
+    <h2>Thank you and hope you visit soon</h2>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
